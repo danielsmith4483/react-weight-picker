@@ -1,18 +1,12 @@
 import React, { Component } from "react";
 
-class MySuperCoolComponent extends Component {
-  handleClick = () => {
-    console.log("Click!");
-  };
-
+class WeightPickerComponent extends Component {
   render() {
     const { color, children } = this.props;
     return (
-      <button onClick={this.handleClick} style={{ color }}>
-        {children}
-      </button>
+      <div className="hexagon" />
     );
   }
 }
 
-export default MySuperCoolComponent;
+export default WeightPickerComponent;
